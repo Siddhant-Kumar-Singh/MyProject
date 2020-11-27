@@ -219,11 +219,11 @@ export default App = () => {
 													return (
 														<>
 															<TouchableWithoutFeedback key={key} style={{ flex: 1, flexDirection: "row" }} onPress={() => filterSelected(key)}>
-																<><View style={{ flexDirection: "row",width: "100%", alignContent: "center" ,justifyContent: "space-evenly"}}>
-																	<View style= {{width: "98%"}}>
-																		<Text style={{fontSize: 12}}>{prop}</Text>
+																<><View style={{ flexDirection: "row", width: "100%", alignContent: "center", justifyContent: "space-evenly" }}>
+																	<View style={{ width: "98%" }}>
+																		<Text style={{ fontSize: 12 }}>{prop}</Text>
 																	</View>
-																	<Icon name="chevron-right" size={12} color="gray" style={{}}/>
+																	<Icon name="chevron-right" size={12} color="gray" style={{}} />
 																</View>
 																</>
 															</TouchableWithoutFeedback>
