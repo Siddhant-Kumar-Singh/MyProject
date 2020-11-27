@@ -10,7 +10,7 @@ import {
 	View,
 	ScrollView,
 	Platform,
-	TouchableHighlight,
+	TouchableOpacity,
 	TouchableWithoutFeedback,
 } from 'react-native';
 import { Card } from 'react-native-elements';
@@ -176,7 +176,8 @@ export default App = () => {
 							placeholder="Search Task" />
 					</View>
 					{/*<Button style= {{marginLeft: 8}} title="Siddhant"/>*/}
-					<TouchableHighlight
+					<TouchableOpacity 
+						activeOpacity={0.8}
 						onPress={filterClicked}
 						style={styles.btnClickContain}
 					>
@@ -190,7 +191,7 @@ export default App = () => {
 								color='white'
 							/>
 						</View>
-					</TouchableHighlight>
+					</TouchableOpacity>
 				</View>
 				<ScrollView>
 					<CardsContainer
