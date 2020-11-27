@@ -216,22 +216,24 @@ export default App = () => {
 										<ScrollView>
 											<View onStartShouldSetResponder={() => true} style={{ marginTop: 12, marginHorizontal: 15 }}>
 												{uniqueStatus.map((prop, key) => {
-													return (
-														<>
+													return (<>
 															<TouchableWithoutFeedback key={key} style={{ flex: 1, flexDirection: "row" }} onPress={() => filterSelected(key)}>
-																<><View style={{ flexDirection: "row", width: "100%", alignContent: "center", justifyContent: "space-evenly" }}>
+																<View style={{ flexDirection: "row", width: "100%", alignContent: "center", justifyContent: "space-evenly" }}>
 																	<View style={{ width: "98%" }}>
 																		<Text style={{ fontSize: 12 }}>{prop}</Text>
 																	</View>
 																	<Icon name="chevron-right" size={12} color="gray" style={{}} />
 																</View>
-																</>
+																
 															</TouchableWithoutFeedback>
-
+															
 															<View style={{ flex: 1, alignContent: "center", marginVertical: 10, height: 0.1, width: '100%', borderRadius: 1, borderWidth: 1, borderColor: 'lightgray', borderStyle: 'dotted', zIndex: 0 }} />
-														</>
+															</>
+														
 													);
-												})}
+												}
+												)
+												}
 											</View>
 										</ScrollView>
 									</View>
